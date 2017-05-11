@@ -1,0 +1,53 @@
+.watch-body{
+      	background-color: black;
+      	height: 500px;
+      	width: 100px;
+      	position: absolute;
+      	left: 50%;
+      	top: 10%;
+      	text-align: center;
+      	color: white;
+      }
+      .images{
+      	position: absolute;
+      	top: 30%;
+      	left: 15%;
+            animation: side 1s ease 3s;
+      }
+      .beat{
+      	font-size: 16px;
+      	animation: beat 3s linear infinite;
+      }
+      @keyframes beat{
+      	from{font-size: 16px}
+      	to{font-size: 20px}
+      }
+      @keyframes side{
+      	from{ transform: translateX(0px); }
+      	to{ transform: translateX(-100px);}
+      }
+      .runner{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            animation: appear 1s ease 4s;
+            display: none;
+            font-size: 20px;
+      }
+      @keyframes appear{
+            from{opacity: 0}
+            to{ opacity: 1 }
+      }
+      #watch{
+            animation: shake 0.2s linear 0.5s;
+      }
+      @keyframes shake{
+            0%{transform: translateX(0px);}
+            25%{transform: translateX(-30px);}
+            50%{transform: translateX(0px);}
+            75%{transform: translateX(30px);}
+            100%{transform: translateX(0px);}
+      }
+      #appear{
+            display: none;
+      }
