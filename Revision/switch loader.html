@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="">
+    <meta name="viewport" width="device-width" initial-scale="1">
+	<title>revision</title>
+	<style type="text/css">
+		.loader{
+			border: 2px solid transparent;
+			border-top: 2px solid orange;
+			border-left: 2px solid orange;
+			border-bottom: 2px solid orange;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			animation: spin .5s linear infinite;
+			position: relative;
+		}
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100%{ transform: rotate(360deg); }
+		}
+		.img{
+			position: relative;
+			margin-top: -10px;
+			margin-left: -100px;
+			color: orange;
+			font-size: 30px;
+			font-family: tempus sans ITC;
+
+		}
+		#container {
+			display: flex;
+			align-items: center;
+			align-content: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -75px 0 0 -75px;
+		}
+		#content {
+			position: relative;
+			text-align: center;
+			animation: mover 1s;
+			display: none;
+		}
+		@keyframes mover {
+			from{ bottom: -100px; opacity: 0 }
+			to { bottom: 0px; opacity: 1 }
+		}
+
+
+
+	</style>
+</head>
+<body onload="myFunction()">
+    <div  id="container">
+	    <div class="loader"></div>
+	     <div class="img">Switch</div>
+    </div>
+     
+
+     <div id="content">
+     	<h3>This is content revision for the greatest</h3>
+     	<p>Hey! Dont hate me cause am better than you</p>
+     </div>
+
+
+
+<script type="text/javascript">
+	var myVar;
+
+
+	function myFunction(){
+		myVar = setTimeout(showPage, 3000);
+	}
+	function showPage(){
+		document.getElementById('container').style.display = "none";
+		document.getElementById('content').style.display = "block";
+	}
+</script>
+</body>
+</html>
