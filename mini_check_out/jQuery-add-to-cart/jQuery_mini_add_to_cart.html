@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="">
+	<title>mini add to cart</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="addtocartmini.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            	<!-- for wine -->
+	        <div class="row row_for_wine">
+	    		<div class="col-md-4">
+	    			<div class="card">
+	    				<div id="wine_amount" class="item_head thumbnail">
+		    				<p>
+		    					 <div class="circle" data-toggle="tooltip" title="click to close">
+		    					 	<div class="inner_circle">
+		    					 		
+		    					 	</div>
+		    					 </div>
+		    				</p>
+		    					<h3 class="item_name_wine">Wine</h3>
+		    					<h3 class="avrg_price">&#x20a6 150</h3>
+		    					<h6>(average price in store)</h6>
+		    					<h5><b>Click to see what is in the store</b></h5>
+		    					<h6>if its wine - its fine!</h6>
+	    				</div>
+	    				<div class="contents wine">
+	    				    <h3>Types of Wine</h3>
+	    					<p class="name">
+	    					   <label>
+		    					   	<input type="checkbox" value="200">
+		    					    Eva: <span class="item_price">&#x20a6</span>
+		    					    <span class="item_price amount">200</span>
+	    					   </label>
+	    					</p>
+	    					<p class="price">
+	    					   <label>
+		    					   	<input type="checkbox" value="500">
+		    					   Brandy: <span class="item_price">&#x20a6</span>
+	    					    <span class="item_price amount">500</span>
+	    					   </label>
+	    					<p class="description">
+	    					     <label>
+		    					   	<input type="checkbox" value="250">
+		    					   Mc Dowells: <span class="item_price">&#x20a6</span>
+	    					    <span class="item_price amount">250</span>
+	    					   </label>
+	    					</p>	
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md-4">
+	    			
+	    		</div>
+	    		    <!-- total section -->
+	    		<div class="col-md-4">
+	    		    <div class="row">
+	    		    	<div class="thumbnail">
+		    					<h2 class="total_head">
+			    					Total <span class="calc_amount">
+			    					₦ (<span id="total_amount"></span>)
+			    					</span>
+		    					</h2>
+		    					    <b id="list"></b>
+		    					</h5>
+	    		        </div>
+	    		        <div class="contents">
+	    				    <h3><b>Create Basket</b></h3>
+	    					<p class="create_basket">
+	    					   Here's where you make a full basket of joy.<br/>
+	    					   Select at least one product /goody to create your basket.<br/> Thanks for your patronage.
+	    					</p>
+	    					<p>
+	    						<button class="btn btn-info btn-success button"  data-toggle="modal" data-target="#myModal" onclick="myFunction()" >Weigh Basket</button>
+	    					</p>
+	    				</div>
+	    				 <div class="contents notification">
+	    				    <h6><b>your items has been checked out <i style="color: green" class="fa fa-check"></i></b></h6>
+	    					
+	    				</div>
+	    		    </div>
+	    		</div>
+	    	</div>
+	        <!--  for biscuits -->
+	    	<div class="row">
+	    		<div class="col-md-4">
+	    			<div class="card">
+	    				<div id="biscuit_head" class="thumbnail item_head">
+	    				<p>
+		    					 <div class="circle" data-toggle="tooltip" title="click to close">
+		    					 	<div class="inner_circle">
+		    					 		
+		    					 	</div>
+		    					 </div>
+		    				</p>
+	    					<h3 class="item_name">Biscuits</h3>
+	    					<h3 class="avrg_price">&#x20a6 30</h3>
+	    					<h6>(average price in store)</h6>
+	    					<h5><b>Click to see what is in the store</b></h5>
+	    					<h6>Here comes a new story</h6>
+	    				</div>
+	    				<div class="contents biscuit_type">
+	    				    <h3>Types of Biscuit</h3>
+	    					<p class="name">
+	    					    <label>
+		    					   	<input type="checkbox" value="10">
+		    					   Coaster: <span class="item_price">&#x20a6</span>
+	    					    <span class="item_price amount">10</span>
+	    					   </label>
+	    					</p>
+	    					<p class="price">
+	    					    <label>
+		    					    <input type="checkbox" value="50">
+		    					   Fibre Active: <span class="item_price">&#x20a6</span>
+	    					        <span class="item_price amount">50</span>
+	    					   </label>
+	    					</p>
+	    					<p class="description">
+	    					 <label>
+		    					    <input type="checkbox" value="25">
+		    					   wafers: <span class="item_price">&#x20a6</span>
+	    					    <span class="item_price amount">25</span>
+	    					   </label>
+	    					</p>	
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h3 class="modal-title">
+		        	<ul class="fa-ul">
+					  <li><i id="done" class="fa-li fa fa-check-square"></i></li>
+					  <li><i id="loading" class="fa-li fa fa-spinner fa-spin"></i></li>
+					</ul>
+		        </h3>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        	<span id="loading_text">
+		        		please Wait...
+		        	</span>
+		        	<div id="done_text">
+		        	    <p>
+		        	    	<b id="checkout"></b>
+		        	    </p>
+		        	    <p>
+		        	    	<span class="total_check">Total=<b id="checkout_total"></b></span>
+		        	    </p>
+		        	    <p>
+		        		your items are ready for purchase
+		        	    </p>
+		        	</div>
+		        </p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" id="check_btn" class="btn btn-danger" data-dismiss="modal">checkOut</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+        
+
+
+
+     <script type="text/javascript" src="jquery.js"></script>
+     <script type="text/javascript" src="bootstrap.min.js"></script>
+     <script type="text/javascript" src="jQuery_mini_add_to_cart.js"></script>
+</body>
+</html>

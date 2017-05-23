@@ -1,0 +1,120 @@
+body{
+    background-color: #F8F8F8;
+}
+.row_for_wine{
+	margin-bottom: 30px;
+}
+.card{
+	background-color: white;
+}
+.contents{
+	border: 1px solid lightgreen;
+}
+.name, .price, .description{
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.create_basket{
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 12px;
+	text-align: center;
+}
+.item_price{
+	color: #D00;
+	text-decoration-style: line-through;
+}
+.item_price .amount{
+
+}
+.calc_amount{
+	color: #D00;
+}
+h2,h3, h6, h5{
+	text-align: center;
+}
+.btn{
+	margin-left: 135px;
+}
+.avrg_price{
+	color: #0093ff;
+}
+.circle{
+	background-color: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-left: 10px;
+
+}
+.inner_circle{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-left: 7px;
+	margin-top: 7px;
+}
+.item_head:hover{
+    background-color: #0093ff;
+    color: white;
+}
+.item_head:hover .avrg_price{
+    color: white;
+}
+.item_head:hover .circle .inner_circle{
+	background-color: #0093ff;
+}
+.item_name{
+	margin-bottom: 30px;
+	margin-top: -40px;
+}
+.item_name_wine{
+	margin-bottom: 30px;
+	margin-top: -40px;
+}
+.total_head{
+	margin-bottom: 30px;
+}
+.total_section{
+
+}
+.wine, .biscuit_type, .button{
+	display: none;
+}
+.fa-check-square, .fa-spinner{
+	margin-left: 250px;
+	margin-top: -20px;
+}
+.fa-ul{
+	font-size: 50px;
+}
+#loading_text{
+
+}
+#done{
+	display: none;
+	color: green;
+}
+#done_text{
+	display: none;
+	margin-left: 220px;
+	color: green;
+}
+#checkout{
+	color: black;
+}
+#checkout_total{
+	color: #D00;
+}
+.modal-content{
+	background-color: lightblue;
+}
+.notification{
+	background-color: lightgreen;
+	display: none;
+}
+.total_check{
+	font-size: 14px;
+	color: black;
+}
